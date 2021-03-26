@@ -10,10 +10,21 @@ $(document).ready(function () {
       }
     );
 
-  $(".searchWord").css({
-    "font-style": "italic",
-    "text-shadow": "2px 2px pink",
-    "font-weight": "bold",
+  // $(".searchWord").css({
+  //   "font-style": "italic",
+  //   "text-shadow": "2px 2px pink",
+  //   "font-weight": "bold",
+  // });
+
+  $('#par').find("span").each(function(){
+    if($(this).text().includes("th")){
+      $(this).css({
+     "font-style": "italic",
+     "text-shadow": "2px 2px pink",
+     "font-weight": "bold"
+   })
+    }
   });
+
 
 });

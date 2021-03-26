@@ -16,11 +16,4 @@ $(document).ready(function () {
     "font-weight": "bold",
   });
 
-  $('#schbtn').click(function(){
-      console.log('clicked');
-     var text= $('#searchbox').val();
-     console.log(text);
-     var p=$('#par');
-     console.log(p);
-  })
 });
